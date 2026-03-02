@@ -1,9 +1,7 @@
 from __future__ import annotations
-
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from typing import Annotated, List
-
 from data_sources.users_data_source import UsersDataSource
 from data_sources.dependencies import get_users_datasource
 from database import get_db

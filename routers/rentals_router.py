@@ -1,9 +1,7 @@
 from __future__ import annotations
-
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
-
 from database import get_db
 from db_models import Bike, Rental, User
 from models.rentals import RentalProcessing
